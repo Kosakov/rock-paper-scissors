@@ -3,11 +3,9 @@ function getComputerChoice(){
     let randomIndex=Math.floor(Math.random() * 3);
     let finalChoice=possibleChoices[randomIndex]
     return finalChoice
-
-
 }
 
-console.log(getComputerChoice())
+//console.log(getComputerChoice())
 
 function getPlayerChoice(){
     let message="Please type Rock,Paper or Scissors"
@@ -28,7 +26,7 @@ function playGame(Computer,Player){
         return
     }
 
-    if(Computer==playerChoice){
+    else if(Computer==playerChoice){
         window.alert("DRAW")
         return
     }
