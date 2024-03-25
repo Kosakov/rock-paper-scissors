@@ -10,32 +10,42 @@ function getComputerChoice(){
 function getPlayerChoice(){
     let message="Please type Rock,Paper or Scissors"
     let choice=prompt(message)
-    return choice
+    if (!choice){
+        return 
+    }
+    let playerChoice=choice.toLowerCase()
+    if (playerChoice!="rock" && playerChoice!="paper" && playerChoice!="scissors"){
+        window.alert("Invalid Input")
+        return getPlayerChoice()
+    }
+    
+    return playerChoice
 }
 
 function playGame(Computer,Player){
-    let playerChoice=Player.toLowerCase()
-    if (playerChoice!="rock" && playerChoice!="paper" && playerChoice!="scissors"){
-        window.alert("Invalid Input")
+    
+    if (!Player){
         return
     }
+    
 
-    if (Computer=="rock" && playerChoice=="scissors" || Computer=="scissors" && playerChoice=="paper" || Computer=="paper" && playerChoice=="rock"){
-        console.log("Computer Wins")
-        window.alert("Computer Wins")
-        return
+    if (Computer=="rock" && Player=="scissors" || 
+    Computer=="scissors" && Player=="paper" || 
+    Computer=="paper" && Player=="rock")
+    {
+        console.log("Computer Wins!")
+        window.alert("Computer Wins!")
     }
 
-    else if(Computer==playerChoice){
-        window.alert("DRAW")
-        return
+    else if(Computer==Player)
+    {
+        window.alert("It's a draw!")
     }
 
 
     else{
-        console.log("Player Wins")
-        window.alert("Player Wins")
-        return
+        console.log("Player Wins!")
+        window.alert("Player Wins!")
     }
 }
 
