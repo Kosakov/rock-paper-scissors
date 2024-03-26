@@ -51,7 +51,11 @@ footer {
   }
 
 
-
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .stats{
     display: flex;
     font-size:1em;
@@ -60,8 +64,8 @@ footer {
 
 #reset{
     border: 1px solid black;
-    width: 4em;
+    flex-direction: column;    
     margin-top: 1em;
-    margin-left: 22.5em;
+    padding: 0.2em;
     border-radius: 8px;
 }
