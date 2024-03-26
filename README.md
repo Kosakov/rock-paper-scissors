@@ -1,1 +1,1 @@
-This a simple console rock-paper-scissors game as a part of The Odin Project curriculum.
+This a simple rock-paper-scissors game as a part of The Odin Project curriculum.
