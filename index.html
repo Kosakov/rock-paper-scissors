@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="index.js"></script>    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>    
+    <title>Document</title>
 </head>
 <body>
-    <h1>game</h1>
+    <div class="wrapper">
+    <header>
+        <h1>WELCOME</h1>
+    </header>
+    <main>
+        <p id="result"></p>
+        <p id="playerChoice"></p>
+        <p id="computerChoice"></p>
+        <h2>Please select</h2>
+        <div class="game-buttons">
+            <div id="rock">Rock</div>
+            <div id="paper">Paper</div>
+            <div id="scissors">Scissors</div>
+        </div> 
+        
+        <div class="result">
+            <div><h2>Result</h2></div>
+            <div class="stats">
+            <div class="player">
+                <p>You</p>
+                <p id="playerscore">0</p>
+            </div>
+            <div class="computer">
+                <p>The mighty computer</p>
+                <p id="computerscore">0</p>
+            </div>
+            <p id="reset">RESET</p>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>This game is a part of The Odin Project curriculum</p>
+    </footer>
+</div>
 </body>
 </html>
