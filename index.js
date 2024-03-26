@@ -51,7 +51,7 @@ function playGame(Computer,Player){
     Computer=="paper" && Player=="rock")
     {
         console.log("Computer Wins!")
-        welcomeText.textContent="DAMN"
+        welcomeText.textContent="DAMN!"
         result.textContent="Computer Wins!"
         computerScore.textContent=Number(computerScore.textContent)+1
     }
